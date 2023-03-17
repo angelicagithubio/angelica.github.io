@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<script src="/assets/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 <style>
 body {
@@ -100,33 +100,36 @@ small {
 <h1>Angelica's restaurant</h1>
 <h2>a Dominican eatery</h2>
 <div class="first">
+	<input type="number" min="0" style="width: 50px"  class="quantities">
   <p>Mofongo <span class="price">$13</span><br />
   <small>Like mangú, mofongo is a popular Dominican dish made from mashed plantains, but instead of being boiled, the plantains are fried or roasted before being mashed with garlic, salt, oil, and chicharron. The mash is then shaped into a ball and served with meat or seafood and a chicken or meat broth. It’s commonly eaten for lunch or dinner, or as a late-night after-drinking snack. </small></p>
 </div>
 
 <div class="second">
+	<input type="number" min="0" style="width: 50px"  class="quantities">
   <p>Mangú (includes cheese and salami)<span class="price">$12</span><br />
   <small>Mangú is a popular dish of mashed plantains. It’s one of the most representative dishes of Dominican cuisine and regarded by many as the Dominican Republic’s official breakfast dish..</small></p>
 </div>
   
 <div class="dessert">
+	<input type="number" min="0" style="width: 50px"  class="quantities">
   <p>Flan <span class="price">$8</span><br />
   <small>Flan is a European and Latin dessert made up of a caramel topping and custard base that’s made with milk, eggs and sweetener (which may already be included in the milk). It is usually baked in a water bath for the best texture, and after baking it is chilled then later inverted onto a platter..</small></p>
 </div>
 
-  <br><br>
+<br><br>
 <input id="Name" placeholder= "Your Name">
  <input id="Email" placeholder="Your email">
  <input type="submit" id="submit">
 <br><br>
-  
+
 <script>
   $('div').on('click', function() {
       $(this).toggleClass('show-description');
   });
 </script>
 
-  <script type="module">
+<script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
 
@@ -226,6 +229,5 @@ const itemsList = ["Mofongo", "Mangu", "Flan"]
 					return units
 				}
 		
-  
-  
-</body>
+</script>
+
